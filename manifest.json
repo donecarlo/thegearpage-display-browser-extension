@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "thegearpage-display-browser-extension",
+  "version": "0.0.1",
+  "description": "Browser extension that changes the default TGP background to avoid screen tearing in certain displays",
+  "permissions": [
+    "scripting",
+    "webNavigation",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://www.thegearpage.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
